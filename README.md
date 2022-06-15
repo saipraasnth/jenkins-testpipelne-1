@@ -11,7 +11,7 @@ node{
       sh "${mavenCMD} clean package"
     } 
     stage('Build Docker Image'){
-        sh "docker build -t dockeridsai9063/spring-boot-mongo ."
+        sh "docker build -t dockeridsai9063/naga:1.0.0 ."
     }
     
     stage('Push Docker Image'){
