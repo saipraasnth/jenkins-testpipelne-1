@@ -15,10 +15,10 @@ node{
     }
     
     stage('Push Docker Image'){
-        withCredentials([string(credentialsId: 'DOCKER_HUB_PASS', variable: 'DOCKER_HUB_PASS')]) {
+        withCredentials([string(credentialsId: 'sai9063', variable: 'sai9063')]) {
           sh "docker login -u dockeridsai9063 -p ${DOCKER_HUB_PASS}"
         }
-          sh 'docker push dockeridsai9063/spring-boot-mongo'
+          sh 'docker push dockeridsai9063/naga:1.0.0'
      }
      
      stage("Deploy To Kuberates Cluster"){
