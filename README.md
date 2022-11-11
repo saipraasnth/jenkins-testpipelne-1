@@ -1,7 +1,7 @@
 node{
      
     stage("Git clone"){
-       git branch: 'main', credentialsId: 'sai', url: 'https://github.com/saipraasnth/jenkins-testpipelne-1'
+       git branch: 'main', credentialsId: 'sai', url: 'https://github.com/saipraasnth/jenkins-testpipelne'
     }
     
     stage(" Maven Build jar"){
